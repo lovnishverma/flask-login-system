@@ -17,7 +17,7 @@ Check out the configuration reference at https://huggingface.co/docs/hub/spaces-
 
 A simple yet comprehensive Flask-based user authentication system with SQLite database integration, featuring user registration, login, session management, and "Remember Me" functionality.
 
-**Live Demo:** [https://rahul23232-flask-login.hf.space/](https://rahul23232-flask-login.hf.space/)
+**Live Demo:** [https://lovnishverma-flask-login.hf.space/](https://lovnishverma-flask-login.hf.space/)
 
 ## 📋 Table of Contents
 
@@ -379,8 +379,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, issues, or contributions:
 
-- **Repository**: [GitHub Repository](https://github.com/yourusername/flask-login-system)
-- **Live Demo**: [Flask Login System](https://rahul23232-flask-login.hf.space/)
+- **Repository**: [GitHub Repository](https://github.com/lovnishverma/flask-login-system)
+- **Live Demo**: [Flask Login System](https://lovnishverma-flask-login.hf.space/)
 - **Issues**: Use GitHub Issues for bug reports and feature requests
 
 ---
