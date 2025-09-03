@@ -47,7 +47,7 @@ A simple yet comprehensive Flask-based user authentication system with SQLite da
 
 - **Backend**: Python 3.x, Flask
 - **Database**: SQLite3
-- **Frontend**: HTML, CSS (Bootstrap-compatible)
+- **Frontend**: HTML, CSS (Tailwind-compatible)
 - **Session Management**: Flask Sessions
 - **Deployment**: Hugging Face Spaces
 
