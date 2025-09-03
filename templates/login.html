@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="POST">
+        <label>Username:</label>
+        <input type="text" name="username" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>
+            <input type="checkbox" name="remember"> Remember Me
+        </label><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="{{ url_for('signup') }}">Signup here</a></p>
+
+  <hr>
+    <br>
+  <div>
+ <a href="https://rahul23232-flask-mongo.hf.space/" style="color:green;" target="_blank">Open in new Tab</a> 
+<br>
+  </div>
+</body>
+</html>
