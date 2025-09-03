@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>Login</h2>
-    <form method="POST">
-        <label>Username:</label>
-        <input type="text" name="username" required><br><br>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-        <label>Password:</label>
-        <input type="password" name="password" required><br><br>
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
 
-        <label>
-            <input type="checkbox" name="remember"> Remember Me
-        </label><br><br>
+    <form method="POST" class="space-y-4">
+      <!-- Username -->
+      <div>
+        <label class="block text-gray-700 font-medium">Username</label>
+        <input type="text" name="username" required 
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
 
-        <button type="submit">Login</button>
+      <!-- Password -->
+      <div>
+        <label class="block text-gray-700 font-medium">Password</label>
+        <input type="password" name="password" required 
+          class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+      </div>
+
+      <!-- Remember Me -->
+      <div class="flex items-center">
+        <input type="checkbox" name="remember" id="remember" 
+          class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+        <label for="remember" class="ml-2 text-gray-600">Remember Me</label>
+      </div>
+
+      <!-- Button -->
+      <button type="submit" 
+        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        Login
+      </button>
     </form>
-    <p>Don't have an account? <a href="{{ url_for('signup') }}">Signup here</a></p>
 
-  <hr>
-    <br>
-  <div>
- <a href="https://lovnishverma-flask-login.hf.space/" style="color:green;" target="_blank">Open in new Tab</a> 
-<br>
+    <!-- Signup link -->
+    <p class="text-center text-gray-600 mt-6">
+      Don't have an account? 
+      <a href="{{ url_for('signup') }}" class="text-blue-600 hover:underline">Signup here</a>
+    </p>
+
+    <hr class="my-6">
+
+    <!-- External link -->
+    <div class="text-center">
+      <a href="https://lovnishverma-flask-login.hf.space/" 
+         class="text-green-600 font-medium hover:underline" target="_blank">
+        Open in new Tab
+      </a>
+    </div>
   </div>
+
 </body>
 </html>
