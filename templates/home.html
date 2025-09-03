@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>Welcome, {{ username }}!</h2>
-    <p>Last visit info (from cookie): {{ last_visit }}</p>
-    <a href="{{ url_for('logout') }}">Logout</a>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="w-full max-w-lg bg-white shadow-lg rounded-2xl p-8 text-center">
+    <!-- Welcome -->
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">
+      Welcome, <span class="text-blue-600">{{ username }}</span>!
+    </h2>
+
+    <!-- Last visit info -->
+    <p class="text-gray-600 mb-6">
+      Last visit info (from cookie): 
+      <span class="font-medium text-gray-800">{{ last_visit }}</span>
+    </p>
+
+    <!-- Logout button -->
+    <a href="{{ url_for('logout') }}" 
+       class="inline-block bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition">
+      Logout
+    </a>
+  </div>
+
 </body>
 </html>
